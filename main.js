@@ -210,6 +210,9 @@ function draw() {
 
     x += dx;
     y += dy;
+    requestAnimationFrame(draw);
+
 }
 
-var interval = setInterval(draw, 10);
+// var interval = setInterval(draw, 10);
+draw()
