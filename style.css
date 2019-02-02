@@ -1,9 +1,19 @@
 html {
   padding: 0;
   margin: 0;
+  background-color: salmon;
 }
+
+.heading {
+  text-align: center;
+  color: aqua;
+  font-size: 100px;
+
+}
+
 canvas {
   background: black;
   display: block;
   margin: 0 auto;
 }
+
