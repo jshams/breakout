@@ -40,8 +40,19 @@
 // ctx.closePath();
 
 
+// ----------------------- //
+// IMPLEMENT INDEPENDENTLY //
+// ----------------------- //
+
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
+let rightPressed = false;
+let leftPressed = false;
+
+// -------------------- //
+// IMPLEMENT IN CLASSES //
+// -------------------- //
+
 const ballRadius = 10;
 let x = canvas.width / 2;
 let y = canvas.height - 30;
@@ -50,8 +61,6 @@ let dy = -2;
 const paddleHeight = 10;
 const paddleWidth = 75;
 let paddleX = (canvas.width - paddleWidth) / 2;
-let rightPressed = false;
-let leftPressed = false;
 // using let instead of const here to later change for stretch challenges
 let brickRowCount = 3;
 let brickColumnCount = 5;
@@ -179,10 +188,10 @@ function drawPaddle() {
 //         bricks[c][r].y = brickY;
 //         ctx.beginPath();
 //         ctx.rect(brickX, brickY, brickWidth, brickHeight);
-//         if (r == 1) {
+//         if (r == 0) {
 //           ctx.fillStyle = '#0095DD';
 //         }
-//         else if (r == 2) {
+//         else if (r == 1) {
 //           ctx.fillStyle = '#00FF00';
 //         }
 //         else {
